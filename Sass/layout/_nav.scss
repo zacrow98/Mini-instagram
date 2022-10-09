@@ -4,7 +4,7 @@ button {
 
 .container-nav{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     position: sticky;
     width: auto;
     background-color: $primary;
@@ -13,6 +13,7 @@ button {
 
     .logo {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         border: 1px solid black;
         a .ico-logo{
