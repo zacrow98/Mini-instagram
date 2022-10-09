@@ -1,0 +1,47 @@
+button {
+
+}
+
+.container-nav{
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    width: auto;
+    background-color: $primary;
+    border: 1px solid black;
+    
+
+    .logo {
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        a .ico-logo{
+            display: flex;
+            height: 50px;
+        }
+        
+        .logo a h1 {
+            display: flex;            
+        }
+    }
+        
+    .second-nav {
+            display: flex;
+            justify-content:end;
+            align-items: center;
+        .user-icon {
+
+            border: 2px solid black;
+            background-color: #fff;
+            border-radius: 50%;
+            height: 50px;
+        
+            }
+            
+            .darkmode {
+                display: flex;
+                align-items: baseline;
+        }
+    }
+
+}

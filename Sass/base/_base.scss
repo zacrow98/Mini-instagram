@@ -1,0 +1,12 @@
+button {
+ border-radius: 5px;   
+ cursor: pointer;
+ font-size: 1em;
+ border: none;
+ background: transparent;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto;
+}
