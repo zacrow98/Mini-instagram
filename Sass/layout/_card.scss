@@ -1,11 +1,13 @@
+@import 'likes.scss';
+
 body {
     .deck {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        align-content: center;
         justify-content: center;
         background-color: $secondary;
-        
     }
 
     .container {
@@ -29,13 +31,18 @@ body {
             box-shadow: 0 2px 4px 6px $shadow;
             margin-right: 12px;
             border-radius: 8px;
+            
 
             .card-top {
+                display: flex;
                 padding: .25rem;
                 font-size: 1rem;
                 font-weight: bold;
                 line-height: 1.3;
                 color: $text;
+                img{
+                    width: 2rem;
+                }
             }
 
             figure {
@@ -67,12 +74,16 @@ body {
 
                 .like {
                     display: flex;
-                    background: none;
+                    background: transparent;
+                    color: gray;
                     border: none;
-                    color: $primary;
-                    padding: 1rem;
+                    outline: none;
+                    padding: 0;
+                    margin: 0;
                     font-size: 2rem;
-                    cursor: pointer;
+                    :hover {
+                        cursor: pointer;
+                    }
                 }
 
                 .data {
