@@ -1,48 +1,57 @@
-button {
-
-}
-
-.container-nav{
+.container-nav {
     display: flex;
     flex-flow: row wrap;
-    position: sticky;
-    width: auto;
+    width: 100%;
+    position: fixed;
     background-color: $primary;
-    border: 1px solid black;
-    
+    box-sizing: border-box;
+    font-size: 2rem;
+    background: rgb(131,58,180);
+    background: $degrade;
 
-    .logo {
+    .first-nav {
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        border: 1px solid black;
-        a .ico-logo{
-            display: flex;
-            height: 50px;
+        flex-flow: row wrap;
+        margin-right: auto;
+        justify-content: center;
+        align-content: center;
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+            justify-content: baseline;
+            .logo-instagram {
+                font-size: 2rem;
+                width: 3rem;
+            }
+            .h1-logo {
+                color: #fff;
+                display: inline;
+    
+            }
         }
         
-        .logo a h1 {
-            display: flex;            
-        }
-    }
+    }        
         
     .second-nav {
-            display: flex;
-            justify-content:end;
-            align-items: center;
+        display: flex;
+        justify-content:end;
+        align-items: center;
         .user-icon {
-
-            border: 2px solid black;
+            margin-top: 2px;
+            padding: auto;
+            border: 1px solid black;
             background-color: #fff;
             border-radius: 50%;
-            height: 50px;
-        
-            }
-            
-            .darkmode {
-                display: flex;
-                align-items: baseline;
+            height: 3rem;
         }
+            
+        .darkmode, .ajustes {
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+        }
+
     }
 
 }

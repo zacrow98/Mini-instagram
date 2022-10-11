@@ -1,0 +1,53 @@
+
+
+input {
+    display: none;
+  }
+  
+  /* button */
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $shadow;
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  
+  /* hear animation */
+  @keyframes like {
+    75% {
+      transform: scale(1.08);
+    }
+  }
+  @keyframes dislike {
+    75% {
+      transform: scale(0.75);
+    }
+  }
+  
+  /* heart click */
+  label ion-icon {
+    color: $complementary;
+    font-size: 2rem;
+    animation: dislike 0.5s ease 0s;
+  }
+  input:checked + label ion-icon {
+    color: $liked;
+    animation: like 0.5s ease 0s ;
+  }
+  /* hover */
+  .button:hover label ion-icon {
+    color: $likehover;
+    ;
+  }
+  
+  /* click */
+  input:checked + label::after {
+    --pos: 5%;
+    animation: disc-red 1.5s ease 0s,
+    spin-red 0.65s ease-in-out 0.25s;
+  }

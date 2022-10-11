@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>MINI-INSTAGRAM</title>
+        <title>JUGGSTAGRAM</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link href="css/style.css" rel="stylesheet" -->
+        <script src="https://kit.fontawesome.com/f6dcf461c1.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/new.css">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- <link href="css/style.css" rel="stylesheet" -->
+
+
     </head>
     <body>
         <header>
             <nav>
                <div class="container-nav">
-                   <div class="logo">
-                       <a href="#home">
-                        <img class="ico-logo" src="images/fotos/instagram-logo-svgrepo-com.svg" alt=""><h1>Mini-Instagram</h1></a>
+                   <div class="first-nav">
+                        <a href="#home">
+                            <ion-icon class="logo-instagram" name="logo-instagram"></ion-icon>
+                            <h1 class="h1-logo">JUGGSTAGRAM</h1>
+                        </a>
                    </div>
                    <div class="second-nav">
                        <a href="perfil.html">
@@ -21,66 +28,171 @@
                        </a>
                        <div class="button-boton">
                            <button class="darkmode">Modo Diablo</button>
-                   </div>
+                       </div>
+                       <div class="button-boton">
+                            <button class="ajustes"><ion-icon name="cog"></ion-icon></button>
+                       </div>
                     </div>
                </div> 
             </nav>
         </header>
-        <!-- <div class="deck">
-            <div class="container">
-                <article class="card">
-                    <header class="card-top">🐷 User</header>
-                        <figure>
-                            <img class="card-img" src="https://via.placeholder.com/500" alt="">
-                        </figure>
-                        <div class="card-bottom">
-                            <div class="wrapper">
-                                <button class="like">♥</button>
+            <div class="deck">
+                <div class="container">
+                    <article class="card">
+                        <header class="card-top">
+                            <a class="mini-user-logo" href="perfil.html">
+                                <img class="user-icon" src="images/fotos/Reapers 2.png" alt="" >
+                                <h2 class="h2aminiuser">User</h2>
+                            </a>
+                        </header>
+                            <figure>
+                                <img class="card-img" src="images/fotos/1.jpg" alt="">
+                            </figure>
+                            <div class="card-bottom">
+                                <div class="button">
+                                    <input type="checkbox" id="liked1">
+                                        <label for="liked1">
+                                            <ion-icon name="heart"></ion-icon>
+                                        </label>
+                                </div>
+                                <div class="data">
+                                    <h3>User</h3>
+                                    <time>6-10-22</time>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
                             </div>
-                            <div class="data">
-                                <h3>User</h3>
-                                <time>6-10-22</time>
-                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </article>
+                </div>
+                <div class="container">
+                    <article class="card">
+                        <header class="card-top">
+                            <a class="mini-user-logo" href="perfil.html">
+                                <img class="user-icon" src="images/fotos/Reapers 2.png" alt="" >
+                                <h2 class="h2aminiuser">User</h2>
+                            </a>
+                        </header>
+                            <figure>
+                                <img class="card-img" src="images/fotos/2.jpg" id="blur" alt="">
+                            </figure>
+                            <div class="card-bottom">
+                                <div class="button">
+                                    <input type="checkbox" id="liked2">
+                                        <label for="liked2">
+                                            <ion-icon name="heart"></ion-icon>
+                                        </label>
+                                </div>
+                                <div class="data">
+                                    <h3>User</h3>
+                                    <time>6-10-22</time>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
                             </div>
-                        </div>
-                </article>
+                    </article>
+                </div>
+                <div class="container">
+                    <article class="card">
+                        <header class="card-top">
+                            <a class="mini-user-logo" href="perfil.html">
+                                <img class="user-icon" src="images/fotos/Reapers 2.png" alt="" >
+                                <h2 class="h2aminiuser">User</h2>
+                            </a>
+                        </header>
+                            <figure>
+                                <img class="card-img" src="images/fotos/3.jpg" id="sepia" alt="">
+                            </figure>
+                            <div class="card-bottom">
+                                <div class="button">
+                                    <input type="checkbox" id="liked3">
+                                        <label for="liked3">
+                                            <ion-icon name="heart"></ion-icon>
+                                        </label>
+                                </div>
+                                <div class="data">
+                                    <h3>User</h3>
+                                    <time>6-10-22</time>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                    </article>
+                </div>
+                <div class="container">
+                    <article class="card">
+                        <header class="card-top">
+                            <a class="mini-user-logo" href="perfil.html">
+                                <img class="user-icon" src="images/fotos/Reapers 2.png" alt="" >
+                                <h2 class="h2aminiuser">User</h2>
+                            </a>
+                        </header>
+                            <figure>
+                                <img class="card-img" src="images/fotos/4.jpg" id="saturate" alt="">
+                            </figure>
+                            <div class="card-bottom">
+                                <div class="button">
+                                    <input type="checkbox" id="liked4">
+                                        <label for="liked4">
+                                            <ion-icon name="heart"></ion-icon>
+                                        </label>
+                                </div>
+                                <div class="data">
+                                    <h3>User</h3>
+                                    <time>6-10-22</time>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                    </article>
+                </div>
+                <div class="container">
+                    <article class="card">
+                        <header class="card-top">
+                            <a class="mini-user-logo" href="perfil.html">
+                                <img class="user-icon" src="images/fotos/Reapers 2.png" alt="" >
+                                <h2 class="h2aminiuser">User</h2>
+                            </a>
+                        </header>
+                            <figure>
+                                <img class="card-img" src="images/fotos/5.jpg" id="invert" alt="">
+                            </figure>
+                            <div class="card-bottom">
+                                <div class="button">
+                                    <input type="checkbox" id="liked5">
+                                        <label for="liked5">
+                                            <ion-icon name="heart"></ion-icon>
+                                        </label>
+                                </div>
+                                <div class="data">
+                                    <h3>User</h3>
+                                    <time>6-10-22</time>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                    </article>
+                </div>
+                <div class="container">
+                    <article class="card">
+                        <header class="card-top">
+                            <a class="mini-user-logo" href="perfil.html">
+                                <img class="user-icon" src="images/fotos/Reapers 2.png" alt="" >
+                                <h2 class="h2aminiuser">User</h2>
+                            </a>
+                        </header>
+                            <figure>
+                                <img class="card-img" src="images/fotos/6.jpg" alt="">
+                            </figure>
+                            <div class="card-bottom">
+                                <div class="button">
+                                    <input type="checkbox" id="liked6">
+                                        <label for="liked6">
+                                            <ion-icon name="heart"></ion-icon>
+                                        </label>
+                                </div>
+                                <div class="data">
+                                    <h3>User</h3>
+                                    <time>6-10-22</time>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                    </article>
+                </div>  
             </div>
-            <div class="container">
-                <article class="card">
-                    <header class="card-top">🐷 User</header>
-                        <figure>
-                            <img class="card-img" src="https://via.placeholder.com/500" alt="">
-                        </figure>
-                        <div class="card-bottom">
-                            <div class="wrapper">
-                                <button class="like">♥</button>
-                            </div>
-                            <div class="data">
-                                <h3>User</h3>
-                                <time>6-10-22</time>
-                                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            </div>
-                        </div>
-                </article>
-            </div>
-            <div class="container">
-                <article class="card">
-                    <header class="card-top">🐷 User</header>
-                        <figure>
-                            <img class="card-img" src="https://via.placeholder.com/500" alt="">
-                        </figure>
-                        <div class="card-bottom">
-                            <div class="wrapper">
-                                <button class="like">♥</button>
-                            </div>
-                            <div class="data">
-                                <h3>User</h3>
-                                <time>6-10-22</time>
-                                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            </div>
-                        </div>
-                </article>
-            </div>
-        </div> -->
     </body>
 </html>

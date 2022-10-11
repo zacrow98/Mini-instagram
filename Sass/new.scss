@@ -1,5 +1,9 @@
+@import 'base/reset';
 @import 'base/fonts';
 @import 'base/base';
 @import 'base/variables';
 @import 'layout/nav';
 @import 'layout/card';
+@import 'layout/likes';
+@import 'layout/filter';
+@import 'responsive/mediaq';
