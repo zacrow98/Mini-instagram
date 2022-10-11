@@ -3,6 +3,7 @@
     flex-flow: row wrap;
     width: 100%;
     position: fixed;
+    z-index: 1;
     background-color: $primary;
     box-sizing: border-box;
     font-size: 2rem;
