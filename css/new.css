@@ -54,7 +54,7 @@ p {
   font-family: "Fauna One", serif;
 }
 
-h1 h2 h3 h4 h5 h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Cinzel", serif;
 }
 
@@ -83,56 +83,25 @@ body {
   grid-template-rows: auto;
 }
 
-.container-nav {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
-  position: fixed;
-  background-color: #833ab4;
-  box-sizing: border-box;
-  font-size: 2rem;
-  background: rgb(131, 58, 180);
-  background: linear-gradient(90deg, rgb(131, 58, 180) 27%, rgb(253, 29, 29) 58%, rgb(252, 176, 69) 100%);
+@media (max-width: 320px) {
+  .container-nav .first-nav a .h1-logo {
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+  }
 }
-.container-nav .first-nav {
-  display: flex;
-  flex-flow: row wrap;
-  margin-right: auto;
-  justify-content: center;
-  align-content: center;
+@media (max-width: 768px) {
+  .container-nav .first-nav a .h1-logo {
+    display: none;
+  }
 }
-.container-nav .first-nav a {
-  color: #fff;
-  text-decoration: none;
-  justify-content: baseline;
+@media (min-width: 769px) {
+  .deck {
+    margin: auto;
+    max-width: 1100px;
+  }
 }
-.container-nav .first-nav a .logo-instagram {
-  font-size: 2rem;
-  width: 3rem;
-}
-.container-nav .first-nav a .h1-logo {
-  color: #fff;
-  display: inline;
-}
-.container-nav .second-nav {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-.container-nav .second-nav .user-icon {
-  margin-top: 2px;
-  padding: auto;
-  border: 1px solid black;
-  background-color: #fff;
-  border-radius: 50%;
-  height: 3rem;
-}
-.container-nav .second-nav .darkmode, .container-nav .second-nav .ajustes {
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-}
-
 input {
   display: none;
 }
@@ -351,22 +320,52 @@ input:checked + label::after {
   filter: invert(0.2);
 }
 
-@media (max-width: 320px) {
-  .container-nav .first-nav a .h1-logo {
-    display: none;
-  }
-  .container {
-    flex-direction: column;
-  }
+.container-nav {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  position: fixed;
+  background-color: #833ab4;
+  box-sizing: border-box;
+  font-size: 2rem;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgb(131, 58, 180) 27%, rgb(253, 29, 29) 58%, rgb(252, 176, 69) 100%);
 }
-@media (max-width: 768px) {
-  .container-nav .first-nav a .h1-logo {
-    display: none;
-  }
+.container-nav .first-nav {
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: auto;
+  justify-content: center;
+  align-content: center;
 }
-@media (min-width: 769px) {
-  .deck {
-    margin: auto;
-    max-width: 1100px;
-  }
+.container-nav .first-nav a {
+  color: #fff;
+  text-decoration: none;
+  justify-content: baseline;
+}
+.container-nav .first-nav a .logo-instagram {
+  font-size: 2rem;
+  width: 3rem;
+}
+.container-nav .first-nav a .h1-logo {
+  color: #fff;
+  display: inline;
+}
+.container-nav .second-nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.container-nav .second-nav .user-icon {
+  margin-top: 2px;
+  padding: auto;
+  border: 1px solid black;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 3rem;
+}
+.container-nav .second-nav .darkmode, .container-nav .second-nav .ajustes {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
 }/*# sourceMappingURL=new.css.map */
