@@ -4,7 +4,6 @@ input {
     display: none;
   }
   
-  /* button */
   label {
     display: flex;
     align-items: center;
@@ -17,7 +16,6 @@ input {
     cursor: pointer;
   }
   
-  /* hear animation */
   @keyframes like {
     75% {
       transform: scale(1.08);
@@ -29,7 +27,7 @@ input {
     }
   }
   
-  /* heart click */
+
   label ion-icon {
     color: $complementary;
     font-size: 2rem;
@@ -39,13 +37,14 @@ input {
     color: $liked;
     animation: like 0.5s ease 0s ;
   }
-  /* hover */
+
+
   .button:hover label ion-icon {
     color: $likehover;
     ;
   }
   
-  /* click */
+
   input:checked + label::after {
     --pos: 5%;
     animation: disc-red 1.5s ease 0s,

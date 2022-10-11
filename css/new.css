@@ -137,7 +137,6 @@ input {
   display: none;
 }
 
-/* button */
 label {
   display: flex;
   align-items: center;
@@ -150,12 +149,12 @@ label {
   cursor: pointer;
 }
 
-/* hear animation */
 @-webkit-keyframes like {
   75% {
     transform: scale(1.08);
   }
 }
+
 @keyframes like {
   75% {
     transform: scale(1.08);
@@ -171,7 +170,6 @@ label {
     transform: scale(0.75);
   }
 }
-/* heart click */
 label ion-icon {
   color: #fcb045;
   font-size: 2rem;
@@ -185,12 +183,10 @@ input:checked + label ion-icon {
           animation: like 0.5s ease 0s;
 }
 
-/* hover */
 .button:hover label ion-icon {
   color: #961d33;
 }
 
-/* click */
 input:checked + label::after {
   --pos: 5%;
   -webkit-animation: disc-red 1.5s ease 0s, spin-red 0.65s ease-in-out 0.25s;
@@ -294,7 +290,6 @@ input {
   display: none;
 }
 
-/* button */
 label {
   display: flex;
   align-items: center;
@@ -307,7 +302,6 @@ label {
   cursor: pointer;
 }
 
-/* hear animation */
 @keyframes like {
   75% {
     transform: scale(1.08);
@@ -318,7 +312,6 @@ label {
     transform: scale(0.75);
   }
 }
-/* heart click */
 label ion-icon {
   color: #fcb045;
   font-size: 2rem;
@@ -332,12 +325,10 @@ input:checked + label ion-icon {
           animation: like 0.5s ease 0s;
 }
 
-/* hover */
 .button:hover label ion-icon {
   color: #961d33;
 }
 
-/* click */
 input:checked + label::after {
   --pos: 5%;
   -webkit-animation: disc-red 1.5s ease 0s, spin-red 0.65s ease-in-out 0.25s;
